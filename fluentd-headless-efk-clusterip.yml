@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: fluentd
+  namespace: kube-logging
+  labels:
+    app: fluentd
+spec:
+  selector:
+    app: fluentd
+  type: ClusterIP
+  ports:
+    - port: 24231
+      name: rest

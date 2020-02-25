@@ -1,0 +1,27 @@
+used customized docker image from docker hub abprakash405
+logs are not forwarding to ES and Kibana 
+
+fluent/fluentd
+https://github.com/fluent/fluentd-kubernetes-daemonset/tree/master/docker-image/v1.8/debian-elasticsearch7
+https://hub.docker.com/
+
+
+---------------------------------------------------
+fluent/fluentd:v1.3-1
+
+value: "elasticsearch.kube-logging.cluster.local"
+
+52.152.246.131
+
+           value: http://elasticsearch:9200
+		   
+curl http://elasticsearch.kube-logging.svc.cluster.local:9200
+
+fluentd.kube-logging.svc.cluster.local
+
+
+clusterIP: None
+
+fluent/fluentd-kubernetes-daemonset:v1.4.2-debian-elasticsearch-1.1
+
+--------------------------------------------------
